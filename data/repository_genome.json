@@ -1,0 +1,88 @@
+{
+  "identity": {
+    "name": "Aditya",
+    "handle": "HazaVVIP",
+    "title": "REPOSITORY GENOME",
+    "subtitle": "an evolving map of engineering signals",
+    "status": "SIGNAL ONLINE",
+    "hero_phrase": "I build instruments for finding what hides in systems."
+  },
+  "featured_artifact": {
+    "name": "GitRecon",
+    "domain": "RECON",
+    "role": "surface mapper",
+    "mission": "discover, map, and observe public systems",
+    "state": "ACTIVE",
+    "language": "Rust",
+    "stars": 2,
+    "updated_at": "2026-08-26T22:38:53Z",
+    "url": "https://github.com/HazaVVIP/GitRecon",
+    "proof": "2 stars / Rust / updated recently"
+  },
+  "genome": [
+    {
+      "name": "hazler",
+      "domain": "RECON",
+      "relation": "extends the mapper",
+      "role": "web crawler",
+      "language": "Rust",
+      "stars": 1,
+      "state": "ACTIVE",
+      "url": "https://github.com/HazaVVIP/hazler"
+    },
+    {
+      "name": "githunt",
+      "domain": "RECON",
+      "relation": "searches the perimeter",
+      "role": "discovery utility",
+      "language": "Python",
+      "stars": 0,
+      "state": "ACTIVE",
+      "url": "https://github.com/HazaVVIP/githunt"
+    },
+    {
+      "name": "haquests",
+      "domain": "PACKET",
+      "relation": "tests the boundary",
+      "role": "packet crafting",
+      "language": "PHP",
+      "stars": 0,
+      "state": "EXPERIMENT",
+      "url": "https://github.com/HazaVVIP/haquests"
+    },
+    {
+      "name": "byps",
+      "domain": "PACKET",
+      "relation": "probes the response",
+      "role": "protocol research",
+      "language": "C++",
+      "stars": 0,
+      "state": "EXPERIMENT",
+      "url": "https://github.com/HazaVVIP/byps"
+    },
+    {
+      "name": "MCP-Server",
+      "domain": "AUTOMATION",
+      "relation": "connects the instruments",
+      "role": "AI bridge",
+      "language": "Other",
+      "stars": 0,
+      "state": "ACTIVE",
+      "url": "https://github.com/HazaVVIP/MCP-Server"
+    },
+    {
+      "name": "telemetry",
+      "domain": "AUTOMATION",
+      "relation": "records the signal",
+      "role": "web telemetry",
+      "language": "HTML",
+      "stars": 0,
+      "state": "EXPERIMENT",
+      "url": "https://github.com/HazaVVIP/telemetry"
+    }
+  ],
+  "signal": {
+    "caption": "one artifact → many instruments → one living system",
+    "footer": "public work / open experiments / systems in motion"
+  }
+}

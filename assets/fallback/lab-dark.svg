@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="790" viewBox="0 0 1180 790" role="img" aria-labelledby="title desc">
+  <title id="title">Aditya — SYSTEMS INTELLIGENCE LAB</title>
+  <desc id="desc">A data-driven systems intelligence dashboard showing repository domains, telemetry, and project topology.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07111F"/>
+      <stop offset="1" stop-color="#0F243B"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="microGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1B4662" stroke-width="1" opacity=".22"/>
+    </pattern>
+    <style>
+      .pulse { animation: pulse 3s ease-in-out infinite; transform-origin: center; }
+      .scan { animation: scan 5s linear infinite; }
+      @keyframes pulse { 0%,100% { opacity: .38; } 50% { opacity: 1; } }
+      @keyframes scan { 0% { transform: translateX(-400px); opacity: 0; } 20% { opacity: .6; } 80% { opacity: .6; } 100% { transform: translateX(700px); opacity: 0; } }
+    </style>
+  </defs>
+  <rect x="8" y="8" width="1164" height="774" rx="28" fill="url(#bg)" stroke="#1B4662" stroke-width="2"/>
+  <rect x="9" y="9" width="1162" height="772" rx="27" fill="url(#microGrid)" opacity=".55"/>
+  <rect class="scan" x="50" y="80" width="420" height="2" fill="url(#cyanLine)" opacity=".45"/>
+  <rect x="32" y="28" width="1116" height="62" rx="16" fill="#0B1A2E" stroke="#1B4662"/>
+  <circle cx="59" cy="59" r="7" fill="#FB7185"/>
+  <circle cx="82" cy="59" r="7" fill="#FBBF24"/>
+  <circle cx="105" cy="59" r="7" fill="#34D399"/>
+  <text x="135" y="64" text-anchor="start" font-family="monospace" font-size="17px" font-weight="700" fill="#F8FAFC">HazaVVIP // systems-intelligence-lab</text>
+  <text x="1070" y="57" text-anchor="end" font-family="monospace" font-size="10px" font-weight="700" fill="#8BA7B8">STATUS</text>
+  <circle class="pulse" cx="1094" cy="58" r="6" fill="#34D399" filter="url(#softGlow)"/>
+  <text x="1118" y="64" text-anchor="end" font-family="monospace" font-size="13px" font-weight="700" fill="#34D399">ONLINE</text>
+  <rect x="32" y="112" width="525" height="380" rx="20" fill="#0B1A2E" stroke="#1B4662"/>
+  <text x="58" y="148" text-anchor="start" font-family="monospace" font-size="13px" font-weight="700" fill="#22D3EE">01 / OPERATIONAL DOMAINS</text>
+  <text x="58" y="174" text-anchor="start" font-family="sans-serif" font-size="25px" font-weight="800" fill="#F8FAFC">repository topology</text>
+  <text x="58" y="199" text-anchor="start" font-family="monospace" font-size="13px" font-weight="400" fill="#8BA7B8">three signals · one engineering system</text>
+  <rect x="58" y="235" width="473" height="61" rx="13" fill="#0F243B" stroke="#22D3EE" stroke-opacity=".45"/>
+  <circle class="pulse" cx="80" cy="265" r="6" fill="#22D3EE" filter="url(#softGlow)"/>
+  <text x="100" y="261" text-anchor="start" font-family="monospace" font-size="14px" font-weight="800" fill="#22D3EE">RECON</text>
+  <text x="100" y="282" text-anchor="start" font-family="monospace" font-size="12px" font-weight="400" fill="#8BA7B8">discover / map / observe</text>
+  <text x="505" y="271" text-anchor="end" font-family="monospace" font-size="11px" font-weight="600" fill="#F8FAFC">GitRecon · hazler · githunt</text>
+  <rect x="58" y="313" width="473" height="61" rx="13" fill="#0F243B" stroke="#A78BFA" stroke-opacity=".45"/>
+  <circle class="pulse" cx="80" cy="343" r="6" fill="#A78BFA" filter="url(#softGlow)"/>
+  <text x="100" y="339" text-anchor="start" font-family="monospace" font-size="14px" font-weight="800" fill="#A78BFA">PACKET</text>
+  <text x="100" y="360" text-anchor="start" font-family="monospace" font-size="12px" font-weight="400" fill="#8BA7B8">inspect / craft / test</text>
+  <text x="505" y="349" text-anchor="end" font-family="monospace" font-size="11px" font-weight="600" fill="#F8FAFC">haquests · byps · CVE-2025-30208</text>
+  <rect x="58" y="391" width="473" height="61" rx="13" fill="#0F243B" stroke="#34D399" stroke-opacity=".45"/>
+  <circle class="pulse" cx="80" cy="421" r="6" fill="#34D399" filter="url(#softGlow)"/>
+  <text x="100" y="417" text-anchor="start" font-family="monospace" font-size="14px" font-weight="800" fill="#34D399">AUTOMATION</text>
+  <text x="100" y="438" text-anchor="start" font-family="monospace" font-size="12px" font-weight="400" fill="#8BA7B8">connect / observe / ship</text>
+  <text x="505" y="427" text-anchor="end" font-family="monospace" font-size="11px" font-weight="600" fill="#F8FAFC">MCP-Server · manus · telemetry</text>
+  <rect x="575" y="112" width="573" height="380" rx="20" fill="#0B1A2E" stroke="#1B4662"/>
+  <text x="602" y="148" text-anchor="start" font-family="monospace" font-size="13px" font-weight="700" fill="#A78BFA">02 / REPOSITORY TOPOLOGY</text>
+  <text x="602" y="174" text-anchor="start" font-family="sans-serif" font-size="25px" font-weight="800" fill="#F8FAFC">signal map</text>
+  <text x="602" y="199" text-anchor="start" font-family="monospace" font-size="13px" font-weight="400" fill="#8BA7B8">public artifacts connected by domain</text>
+  <circle cx="855" cy="320" r="74" fill="#0F243B" stroke="#22D3EE" stroke-opacity=".55" stroke-width="2"/>
+  <circle class="pulse" cx="855" cy="320" r="55" fill="none" stroke="#22D3EE" stroke-opacity=".24" stroke-width="2"/>
+  <text x="855" y="312" text-anchor="middle" font-family="monospace" font-size="19px" font-weight="800" fill="#F8FAFC">HAZA</text>
+  <text x="855" y="336" text-anchor="middle" font-family="monospace" font-size="12px" font-weight="700" fill="#22D3EE">CORE</text>
+  <path d="M 855 320 L 670 260" fill="none" stroke="#22D3EE" stroke-opacity=".5" stroke-width="2" stroke-dasharray="5 8"/>
+  <circle class="pulse" cx="670" cy="260" r="29" fill="#22D3EE" fill-opacity=".12" stroke="#22D3EE" stroke-width="2"/>
+  <text x="670" y="264" text-anchor="middle" font-family="monospace" font-size="10px" font-weight="800" fill="#22D3EE">RECON</text>
+  <path d="M 855 320 L 1040 260" fill="none" stroke="#A78BFA" stroke-opacity=".5" stroke-width="2" stroke-dasharray="5 8"/>
+  <circle class="pulse" cx="1040" cy="260" r="29" fill="#A78BFA" fill-opacity=".12" stroke="#A78BFA" stroke-width="2"/>
+  <text x="1040" y="264" text-anchor="middle" font-family="monospace" font-size="10px" font-weight="800" fill="#A78BFA">PACKET</text>
+  <path d="M 855 320 L 670 410" fill="none" stroke="#34D399" stroke-opacity=".5" stroke-width="2" stroke-dasharray="5 8"/>
+  <circle class="pulse" cx="670" cy="410" r="29" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-width="2"/>
+  <text x="670" y="414" text-anchor="middle" font-family="monospace" font-size="10px" font-weight="800" fill="#34D399">AUTOMATION</text>
+  <path d="M 855 320 L 1040 410" fill="none" stroke="#FBBF24" stroke-opacity=".5" stroke-width="2" stroke-dasharray="5 8"/>
+  <circle class="pulse" cx="1040" cy="410" r="29" fill="#FBBF24" fill-opacity=".12" stroke="#FBBF24" stroke-width="2"/>
+  <text x="1040" y="414" text-anchor="middle" font-family="monospace" font-size="10px" font-weight="800" fill="#FBBF24">EXPERIMENTS</text>
+  <rect x="32" y="515" width="1116" height="222" rx="20" fill="#0B1A2E" stroke="#1B4662"/>
+  <text x="58" y="551" text-anchor="start" font-family="monospace" font-size="13px" font-weight="700" fill="#34D399">03 / LIVE TELEMETRY</text>
+  <text x="58" y="578" text-anchor="start" font-family="sans-serif" font-size="25px" font-weight="800" fill="#F8FAFC">engineering signal</text>
+  <text x="1120" y="552" text-anchor="end" font-family="monospace" font-size="11px" font-weight="600" fill="#8BA7B8">snapshot: 2026-08-27</text>
+  <rect x="58" y="602" width="198" height="96" rx="14" fill="#0F243B" stroke="#22D3EE" stroke-opacity=".35"/>
+  <text x="76" y="628" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#8BA7B8">PUBLIC REPOS</text>
+  <text x="76" y="670" text-anchor="start" font-family="monospace" font-size="33px" font-weight="800" fill="#22D3EE">14</text>
+  <circle class="pulse" cx="232" cy="650" r="5" fill="#22D3EE"/>
+  <rect x="290" y="602" width="198" height="96" rx="14" fill="#0F243B" stroke="#A78BFA" stroke-opacity=".35"/>
+  <text x="308" y="628" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#8BA7B8">FOLLOWERS</text>
+  <text x="308" y="670" text-anchor="start" font-family="monospace" font-size="33px" font-weight="800" fill="#A78BFA">2</text>
+  <circle class="pulse" cx="464" cy="650" r="5" fill="#A78BFA"/>
+  <rect x="522" y="602" width="198" height="96" rx="14" fill="#0F243B" stroke="#34D399" stroke-opacity=".35"/>
+  <text x="540" y="628" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#8BA7B8">STARS</text>
+  <text x="540" y="670" text-anchor="start" font-family="monospace" font-size="33px" font-weight="800" fill="#34D399">3</text>
+  <circle class="pulse" cx="696" cy="650" r="5" fill="#34D399"/>
+  <rect x="754" y="602" width="198" height="96" rx="14" fill="#0F243B" stroke="#FBBF24" stroke-opacity=".35"/>
+  <text x="772" y="628" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#8BA7B8">DOMAINS</text>
+  <text x="772" y="670" text-anchor="start" font-family="monospace" font-size="33px" font-weight="800" fill="#FBBF24">3</text>
+  <circle class="pulse" cx="928" cy="650" r="5" fill="#FBBF24"/>
+  <rect x="986" y="602" width="134" height="96" rx="14" fill="#0F243B" stroke="#1B4662"/>
+  <text x="1002" y="628" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#8BA7B8">STACK MIX</text>
+  <text x="1002" y="651" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Python</text>
+  <rect x="1054" y="644" width="52" height="6" rx="3" fill="#1B4662"/>
+  <rect x="1054" y="644" width="52" height="6" rx="3" fill="#22D3EE"/>
+  <text x="1002" y="661" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Other</text>
+  <rect x="1054" y="654" width="52" height="6" rx="3" fill="#1B4662"/>
+  <rect x="1054" y="654" width="31" height="6" rx="3" fill="#A78BFA"/>
+  <text x="1002" y="671" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Rust</text>
+  <rect x="1054" y="664" width="52" height="6" rx="3" fill="#1B4662"/>
+  <rect x="1054" y="664" width="31" height="6" rx="3" fill="#34D399"/>
+  <text x="1002" y="681" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">C++</text>
+  <rect x="1054" y="674" width="52" height="6" rx="3" fill="#1B4662"/>
+  <rect x="1054" y="674" width="10" height="6" rx="3" fill="#FBBF24"/>
+  <text x="1002" y="691" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">HTML</text>
+  <rect x="1054" y="684" width="52" height="6" rx="3" fill="#1B4662"/>
+  <rect x="1054" y="684" width="10" height="6" rx="3" fill="#FB7185"/>
+  <text x="58" y="725" text-anchor="start" font-family="monospace" font-size="12px" font-weight="400" fill="#8BA7B8">$ observe --public-signal --continuous</text>
+  <text x="1120" y="725" text-anchor="end" font-family="monospace" font-size="12px" font-weight="700" fill="#22D3EE">RECON · PACKET · AUTOMATION</text>
+</svg>

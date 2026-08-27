@@ -1,0 +1,58 @@
+{
+  "username": "HazaVVIP",
+  "display_name": "Aditya",
+  "lab_name": "SYSTEMS INTELLIGENCE LAB",
+  "tagline": "RECON · PACKET · AUTOMATION",
+  "status": "ONLINE / BUILDING IN PUBLIC",
+  "palette": {
+    "dark": {
+      "background": "#07111F",
+      "panel": "#0B1A2E",
+      "panel_alt": "#0F243B",
+      "border": "#1B4662",
+      "text": "#F8FAFC",
+      "muted": "#8BA7B8",
+      "cyan": "#22D3EE",
+      "purple": "#A78BFA",
+      "green": "#34D399",
+      "amber": "#FBBF24",
+      "red": "#FB7185"
+    },
+    "light": {
+      "background": "#F4FAFC",
+      "panel": "#FFFFFF",
+      "panel_alt": "#EAF5F8",
+      "border": "#B6DCE7",
+      "text": "#0F172A",
+      "muted": "#526B78",
+      "cyan": "#0891B2",
+      "purple": "#7C3AED",
+      "green": "#059669",
+      "amber": "#B45309",
+      "red": "#E11D48"
+    }
+  },
+  "domains": [
+    {
+      "id": "recon",
+      "label": "RECON",
+      "description": "discover / map / observe",
+      "color": "cyan",
+      "repositories": ["GitRecon", "hazler", "githunt"]
+    },
+    {
+      "id": "packet",
+      "label": "PACKET",
+      "description": "inspect / craft / test",
+      "color": "purple",
+      "repositories": ["haquests", "byps", "CVE-2025-30208"]
+    },
+    {
+      "id": "automation",
+      "label": "AUTOMATION",
+      "description": "connect / observe / ship",
+      "color": "green",
+      "repositories": ["MCP-Server", "manus", "telemetry"]
+    }
+  ]
+}

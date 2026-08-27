@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="720" viewBox="0 0 1180 720" role="img" aria-labelledby="title desc">
+  <title id="title">Aditya — HazaVVIP Signal Array</title>
+  <desc id="desc">A cinematic systems intelligence profile visual mapping HazaVVIP repositories into recon, packet, and automation signals.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4FAFC"/>
+      <stop offset="0.52" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EAF5F8"/>
+    </linearGradient>
+    <radialGradient id="core" cx="48%" cy="44%" r="66%">
+      <stop offset="0" stop-color="#0891B2" stop-opacity=".95"/>
+      <stop offset=".18" stop-color="#7C3AED" stop-opacity=".68"/>
+      <stop offset=".52" stop-color="#EAF5F8" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#F4FAFC" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0891B2" stop-opacity="0"/>
+      <stop offset=".45" stop-color="#0891B2" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="signal" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0891B2"/>
+      <stop offset=".5" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#B6DCE7" stroke-width="1" opacity=".28"/>
+    </pattern>
+    <pattern id="fineGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#0891B2" stroke-width=".5" opacity=".14"/>
+    </pattern>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .breathe { animation: breathe 4s ease-in-out infinite; transform-origin: 440px 340px; }
+      .orbit { animation: orbit 18s linear infinite; transform-origin: 440px 340px; }
+      .scan { animation: scan 6s linear infinite; }
+      .blink { animation: blink 2.6s ease-in-out infinite; }
+      @keyframes breathe { 0%,100% { opacity:.55; } 50% { opacity:1; } }
+      @keyframes orbit { to { transform: rotate(360deg); } }
+      @keyframes scan { 0% { transform: translateX(-500px); opacity:0; } 20% { opacity:.5; } 80% { opacity:.5; } 100% { transform: translateX(920px); opacity:0; } }
+      @keyframes blink { 0%,100% { opacity:.3; } 50% { opacity:1; } }
+    </style>
+  </defs>
+  <rect x="8" y="8" width="1164" height="704" rx="30" fill="url(#bg)" stroke="#B6DCE7" stroke-width="2"/>
+  <rect x="9" y="9" width="1162" height="702" rx="29" fill="url(#grid)" opacity=".52"/>
+  <rect x="9" y="9" width="1162" height="702" rx="29" fill="url(#fineGrid)" opacity=".28"/>
+  <circle class="blink" cx="74" cy="132" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="126" cy="84" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="194" cy="174" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="267" cy="112" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="332" cy="64" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="396" cy="154" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="478" cy="92" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="548" cy="174" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="628" cy="86" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="711" cy="138" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="790" cy="72" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="874" cy="158" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="952" cy="98" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="1040" cy="150" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="1112" cy="82" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="90" cy="500" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="178" cy="565" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="256" cy="523" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="344" cy="592" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="502" cy="552" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="580" cy="612" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="672" cy="535" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="766" cy="594" r="2" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="862" cy="528" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="968" cy="580" r="1" fill="#0F172A" opacity=".34"/>
+  <circle class="blink" cx="1096" cy="540" r="2" fill="#0F172A" opacity=".34"/>
+  <text x="42" y="44" text-anchor="start" font-family="monospace" font-size="11px" font-weight="700" fill="#0891B2" opacity="1.0">SIGNAL ARRAY / 001</text>
+  <text x="1138" y="44" text-anchor="end" font-family="monospace" font-size="10px" font-weight="600" fill="#526B78" opacity="1.0">LAT 06.20 · LONG 106.82 · UTC+7</text>
+  <line x1="42" y1="61" x2="1138" y2="61" stroke="#B6DCE7" stroke-width="1" opacity="0.7" stroke-dasharray=""/>
+  <text x="42" y="94" text-anchor="start" font-family="sans-serif" font-size="34px" font-weight="800" fill="#0F172A" opacity="1.0">HazaVVIP</text>
+  <text x="42" y="118" text-anchor="start" font-family="monospace" font-size="12px" font-weight="700" fill="#7C3AED" opacity="1.0">SYSTEMS INTELLIGENCE LAB</text>
+  <text x="1138" y="96" text-anchor="end" font-family="monospace" font-size="11px" font-weight="700" fill="#059669" opacity="1.0">PUBLIC SIGNAL / LIVE</text>
+  <circle class="blink" cx="1114" cy="92" r="5" fill="#059669" filter="url(#smallGlow)"/>
+  <path d="M 42 155 V 634" stroke="#B6DCE7" stroke-width="1"/>
+  <path d="M 42 155 V 242" stroke="#0891B2" stroke-width="3"/>
+  <text x="27" y="634" text-anchor="middle" font-family="monospace" font-size="10px" font-weight="700" fill="#526B78" opacity="1.0">M I S S I O N</text>
+  <g transform="translate(18 300) rotate(-90)">
+    <text x="0" y="0" text-anchor="start" font-family="monospace" font-size="10px" font-weight="600" fill="#526B78" opacity="1.0">DISCOVER · INSPECT · CONNECT · SHIP</text>
+  </g>
+  <circle cx="440" cy="348" r="206" fill="url(#core)" opacity=".42"/>
+  <circle class="breathe" cx="440" cy="348" r="156" fill="none" stroke="#0891B2" stroke-width="1" stroke-opacity=".28"/>
+  <circle cx="440" cy="348" r="122" fill="none" stroke="#7C3AED" stroke-width="1" stroke-opacity=".35" stroke-dasharray="2 10"/>
+  <ellipse class="orbit" cx="440" cy="348" rx="196" ry="72" fill="none" stroke="#0891B2" stroke-width="1" stroke-opacity=".42" stroke-dasharray="8 13"/>
+  <ellipse class="orbit" cx="440" cy="348" rx="72" ry="196" fill="none" stroke="#7C3AED" stroke-width="1" stroke-opacity=".28" stroke-dasharray="4 16"/>
+  <circle cx="440" cy="348" r="92" fill="url(#core)" stroke="#0891B2" stroke-opacity=".8" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="440" cy="348" r="76" fill="none" stroke="#0F172A" stroke-opacity=".2" stroke-width="1"/>
+  <path class="scan" d="M 314 348 H 566" stroke="url(#beam)" stroke-width="2"/>
+  <text x="440" y="336" text-anchor="middle" font-family="monospace" font-size="25px" font-weight="800" fill="#0F172A" opacity="1.0">HAZA</text>
+  <text x="440" y="364" text-anchor="middle" font-family="monospace" font-size="11px" font-weight="700" fill="#0891B2" opacity="1.0">CORE / ONLINE</text>
+  <text x="440" y="388" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="600" fill="#526B78" opacity="1.0">signal acquired</text>
+  <path d="M 440 348 L 242 228" fill="none" stroke="#0891B2" stroke-width="1" stroke-opacity=".46" stroke-dasharray="4 9"/>
+  <circle class="breathe" cx="242" cy="228" r="24" fill="#FFFFFF" stroke="#0891B2" stroke-width="2"/>
+  <circle cx="242" cy="228" r="8" fill="#0891B2" opacity=".16" filter="url(#smallGlow)"/>
+  <text x="242" y="232" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="800" fill="#0891B2" opacity="1.0">01</text>
+  <text x="242" y="272" text-anchor="middle" font-family="monospace" font-size="11px" font-weight="800" fill="#0891B2" opacity="1.0">RECON</text>
+  <text x="242" y="287" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="500" fill="#526B78" opacity="1.0">discover / map</text>
+  <path d="M 440 348 L 644 214" fill="none" stroke="#7C3AED" stroke-width="1" stroke-opacity=".46" stroke-dasharray="4 9"/>
+  <circle class="breathe" cx="644" cy="214" r="24" fill="#FFFFFF" stroke="#7C3AED" stroke-width="2"/>
+  <circle cx="644" cy="214" r="8" fill="#7C3AED" opacity=".16" filter="url(#smallGlow)"/>
+  <text x="644" y="218" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="800" fill="#7C3AED" opacity="1.0">02</text>
+  <text x="644" y="258" text-anchor="middle" font-family="monospace" font-size="11px" font-weight="800" fill="#7C3AED" opacity="1.0">PACKET</text>
+  <text x="644" y="273" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="500" fill="#526B78" opacity="1.0">inspect / craft</text>
+  <path d="M 440 348 L 704 458" fill="none" stroke="#059669" stroke-width="1" stroke-opacity=".46" stroke-dasharray="4 9"/>
+  <circle class="breathe" cx="704" cy="458" r="24" fill="#FFFFFF" stroke="#059669" stroke-width="2"/>
+  <circle cx="704" cy="458" r="8" fill="#059669" opacity=".16" filter="url(#smallGlow)"/>
+  <text x="704" y="462" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="800" fill="#059669" opacity="1.0">03</text>
+  <text x="704" y="502" text-anchor="middle" font-family="monospace" font-size="11px" font-weight="800" fill="#059669" opacity="1.0">AUTOMATION</text>
+  <text x="704" y="517" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="500" fill="#526B78" opacity="1.0">connect / ship</text>
+  <path d="M 440 348 L 236 488" fill="none" stroke="#B45309" stroke-width="1" stroke-opacity=".46" stroke-dasharray="4 9"/>
+  <circle class="breathe" cx="236" cy="488" r="24" fill="#FFFFFF" stroke="#B45309" stroke-width="2"/>
+  <circle cx="236" cy="488" r="8" fill="#B45309" opacity=".16" filter="url(#smallGlow)"/>
+  <text x="236" y="492" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="800" fill="#B45309" opacity="1.0">04</text>
+  <text x="236" y="532" text-anchor="middle" font-family="monospace" font-size="11px" font-weight="800" fill="#B45309" opacity="1.0">EXPERIMENTS</text>
+  <text x="236" y="547" text-anchor="middle" font-family="monospace" font-size="9px" font-weight="500" fill="#526B78" opacity="1.0">test / learn</text>
+  <path d="M 808 148 H 1138" stroke="#B6DCE7" stroke-width="1"/>
+  <text x="808" y="142" text-anchor="start" font-family="monospace" font-size="11px" font-weight="800" fill="#B45309" opacity="1.0">TRANSMISSION LOG</text>
+  <text x="1138" y="142" text-anchor="end" font-family="monospace" font-size="9px" font-weight="600" fill="#526B78" opacity="1.0">3 ARTIFACTS</text>
+  <g transform="translate(0 0)">
+    <rect x="808" y="178" width="330" height="86" rx="14" fill="#FFFFFF" fill-opacity=".86" stroke="#0891B2" stroke-opacity=".48"/>
+    <rect x="808" y="178" width="6" height="86" rx="3" fill="#0891B2"/>
+    <text x="830" y="201" text-anchor="start" font-family="monospace" font-size="9px" font-weight="700" fill="#0891B2" opacity="1.0">ARTIFACT / 01</text>
+    <text x="830" y="226" text-anchor="start" font-family="monospace" font-size="17px" font-weight="800" fill="#0F172A" opacity="1.0">GitRecon</text>
+    <text x="830" y="245" text-anchor="start" font-family="monospace" font-size="10px" font-weight="500" fill="#526B78" opacity="1.0">public engineering artifact</text>
+    <text x="1114" y="201" text-anchor="end" font-family="monospace" font-size="9px" font-weight="700" fill="#526B78" opacity="1.0">Rust</text>
+    <text x="1114" y="246" text-anchor="end" font-family="monospace" font-size="10px" font-weight="700" fill="#0891B2" opacity="1.0">★ 2</text>
+    <path d="M 830 254 H 920" stroke="#0891B2" stroke-width="2" stroke-opacity=".34"/>
+    <path d="M 930 254 H 1000" stroke="#B6DCE7" stroke-width="2"/>
+  </g>
+  <g transform="translate(9 3)">
+    <rect x="808" y="290" width="330" height="86" rx="14" fill="#FFFFFF" fill-opacity=".86" stroke="#7C3AED" stroke-opacity=".48"/>
+    <rect x="808" y="290" width="6" height="86" rx="3" fill="#7C3AED"/>
+    <text x="830" y="313" text-anchor="start" font-family="monospace" font-size="9px" font-weight="700" fill="#7C3AED" opacity="1.0">ARTIFACT / 02</text>
+    <text x="830" y="338" text-anchor="start" font-family="monospace" font-size="17px" font-weight="800" fill="#0F172A" opacity="1.0">haquests</text>
+    <text x="830" y="357" text-anchor="start" font-family="monospace" font-size="10px" font-weight="500" fill="#526B78" opacity="1.0">Low-Level Packet Crafting</text>
+    <text x="1114" y="313" text-anchor="end" font-family="monospace" font-size="9px" font-weight="700" fill="#526B78" opacity="1.0">PHP</text>
+    <text x="1114" y="358" text-anchor="end" font-family="monospace" font-size="10px" font-weight="700" fill="#7C3AED" opacity="1.0">★ 0</text>
+    <path d="M 830 366 H 920" stroke="#7C3AED" stroke-width="2" stroke-opacity=".34"/>
+    <path d="M 930 366 H 1000" stroke="#B6DCE7" stroke-width="2"/>
+  </g>
+  <g transform="translate(18 6)">
+    <rect x="808" y="402" width="330" height="86" rx="14" fill="#FFFFFF" fill-opacity=".86" stroke="#059669" stroke-opacity=".48"/>
+    <rect x="808" y="402" width="6" height="86" rx="3" fill="#059669"/>
+    <text x="830" y="425" text-anchor="start" font-family="monospace" font-size="9px" font-weight="700" fill="#059669" opacity="1.0">ARTIFACT / 03</text>
+    <text x="830" y="450" text-anchor="start" font-family="monospace" font-size="17px" font-weight="800" fill="#0F172A" opacity="1.0">manus</text>
+    <text x="830" y="469" text-anchor="start" font-family="monospace" font-size="10px" font-weight="500" fill="#526B78" opacity="1.0">Manus AI</text>
+    <text x="1114" y="425" text-anchor="end" font-family="monospace" font-size="9px" font-weight="700" fill="#526B78" opacity="1.0">Other</text>
+    <text x="1114" y="470" text-anchor="end" font-family="monospace" font-size="10px" font-weight="700" fill="#059669" opacity="1.0">★ 0</text>
+    <path d="M 830 478 H 920" stroke="#059669" stroke-width="2" stroke-opacity=".34"/>
+    <path d="M 930 478 H 1000" stroke="#B6DCE7" stroke-width="2"/>
+  </g>
+  <path d="M 92 606 H 1088" stroke="#B6DCE7" stroke-width="1"/>
+  <text x="92" y="596" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#059669" opacity="1.0">ACTIVITY / SIGNAL DENSITY</text>
+  <text x="1088" y="596" text-anchor="end" font-family="monospace" font-size="9px" font-weight="600" fill="#526B78" opacity="1.0">SNAPSHOT 2026-08-27</text>
+  <path d="M 92 640 C 140 612 160 666 205 640 S 274 616 315 642 S 384 676 427 633 S 500 604 544 640 S 613 675 659 634 S 736 608 780 640 S 852 670 896 630 S 970 610 1018 641 S 1060 657 1088 632" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" filter="url(#smallGlow)"/>
+  <path d="M 92 640 C 140 612 160 666 205 640 S 274 616 315 642 S 384 676 427 633 S 500 604 544 640 S 613 675 659 634 S 736 608 780 640 S 852 670 896 630 S 970 610 1018 641 S 1060 657 1088 632" fill="none" stroke="#0F172A" stroke-opacity=".22" stroke-width="1"/>
+  <text x="92" y="675" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#526B78" opacity="1.0">REPOSITORIES 13</text>
+  <text x="268" y="675" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#526B78" opacity="1.0">STARS 03</text>
+  <text x="408" y="675" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#526B78" opacity="1.0">FOLLOWERS 02</text>
+  <text x="1088" y="675" text-anchor="end" font-family="monospace" font-size="10px" font-weight="700" fill="#0891B2" opacity="1.0">END OF TRANSMISSION // BUILD IN PUBLIC</text>
+</svg>

@@ -1,0 +1,8 @@
+# Local-only research material; never publish third-party references as profile assets.
+reference-moodboard/
+reference-atlas-v2.md
+research-gap-analysis.md
+
+# Local silhouette studies are review artifacts, not production README assets.
+assets/prototypes/
+scripts/render_silhouettes.py
