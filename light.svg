@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="300" viewBox="0 0 1180 300" role="img" aria-labelledby="title desc">
+  <title id="title">HazaVVIP developer profile</title>
+  <desc id="desc">A light theme developer profile banner for HazaVVIP</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#e8f3f7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0891b2"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#0f172a" flood-opacity=".14"/>
+    </filter>
+  </defs>
+  <rect x="10" y="10" width="1160" height="280" rx="24" fill="url(#bg)" stroke="#b9dbe6" stroke-width="2"/>
+  <circle cx="1040" cy="-5" r="190" fill="#c4b5fd" opacity=".18"/>
+  <circle cx="1140" cy="250" r="150" fill="#67e8f9" opacity=".20"/>
+  <g filter="url(#shadow)">
+    <rect x="45" y="45" width="485" height="210" rx="16" fill="#ffffff" stroke="#b9dbe6"/>
+    <rect x="45" y="45" width="485" height="34" rx="16" fill="#eef7fa"/>
+    <circle cx="70" cy="62" r="5" fill="#fb7185"/>
+    <circle cx="88" cy="62" r="5" fill="#fbbf24"/>
+    <circle cx="106" cy="62" r="5" fill="#34d399"/>
+    <text x="70" y="114" font-family="monospace" font-size="16" fill="#64748b">$ whoami</text>
+    <text x="70" y="146" font-family="monospace" font-size="21" font-weight="700" fill="#0891b2">HazaVVIP</text>
+    <text x="70" y="178" font-family="monospace" font-size="15" fill="#475569">developer · builder · open source</text>
+    <text x="70" y="216" font-family="monospace" font-size="15" fill="#7c3aed">$ ship --useful-things</text>
+  </g>
+  <text x="595" y="105" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="42" font-weight="800" fill="#0f172a">Aditya</text>
+  <text x="598" y="143" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="22" fill="#0891b2">HazaVVIP</text>
+  <rect x="598" y="168" width="385" height="4" rx="2" fill="url(#accent)"/>
+  <text x="598" y="207" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" fill="#475569">Building tools, exploring ideas,</text>
+  <text x="598" y="233" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" fill="#475569">and learning in public.</text>
+  <text x="1090" y="253" font-family="monospace" font-size="15" text-anchor="end" fill="#64748b">// profile.md</text>
+</svg>
