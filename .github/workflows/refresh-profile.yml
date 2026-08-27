@@ -29,8 +29,10 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/fetch_profile_data.py
 
-      - name: Render light and dark dashboard
-        run: python3 scripts/render_lab.py
+      - name: Render systems dashboard assets
+        run: |
+          python3 scripts/render_lab.py
+          python3 scripts/render_signal_array.py
 
       - name: Validate profile assets
         run: python3 scripts/validate_assets.py

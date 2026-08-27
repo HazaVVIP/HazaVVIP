@@ -14,8 +14,12 @@ REQUIRED = [
     ROOT / "data" / "profile.json",
     ROOT / "assets" / "generated" / "lab-dark.svg",
     ROOT / "assets" / "generated" / "lab-light.svg",
+    ROOT / "assets" / "generated" / "signal-array-dark.svg",
+    ROOT / "assets" / "generated" / "signal-array-light.svg",
     ROOT / "assets" / "fallback" / "lab-dark.svg",
     ROOT / "assets" / "fallback" / "lab-light.svg",
+    ROOT / "assets" / "fallback" / "signal-array-dark.svg",
+    ROOT / "assets" / "fallback" / "signal-array-light.svg",
 ]
 SECRET_PATTERNS = [
     re.compile(r"ghp_[A-Za-z0-9_]+"),
@@ -46,21 +50,27 @@ def main() -> int:
                 errors.append(f"secret pattern found: {path.relative_to(ROOT)}")
 
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
-    for required_text in ("Systems Intelligence Lab", "RECON", "PACKET", "AUTOMATION", "lab-dark.svg", "lab-light.svg"):
+    for required_text in ("Systems Intelligence Lab", "RECON", "PACKET", "AUTOMATION", "signal-array-dark.svg", "signal-array-light.svg"):
         if required_text not in readme:
             errors.append(f"README missing marker: {required_text}")
     for pattern in SECRET_PATTERNS:
         if pattern.search(readme):
             errors.append("secret pattern found: README.md")
 
+    for theme in ("dark", "light"):
+        generated = (ROOT / "assets" / "generated" / f"signal-array-{theme}.svg").read_bytes()
+        fallback = (ROOT / "assets" / "fallback" / f"signal-array-{theme}.svg").read_bytes()
+        if generated != fallback:
+            errors.append(f"{theme} signal-array fallback differs from generated asset")
+
     generated_dark = (ROOT / "assets" / "generated" / "lab-dark.svg").read_bytes()
     fallback_dark = (ROOT / "assets" / "fallback" / "lab-dark.svg").read_bytes()
     if generated_dark != fallback_dark:
-        errors.append("dark fallback differs from generated asset")
+        errors.append("dark lab fallback differs from generated asset")
     generated_light = (ROOT / "assets" / "generated" / "lab-light.svg").read_bytes()
     fallback_light = (ROOT / "assets" / "fallback" / "lab-light.svg").read_bytes()
     if generated_light != fallback_light:
-        errors.append("light fallback differs from generated asset")
+        errors.append("light lab fallback differs from generated asset")
 
     if errors:
         print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)

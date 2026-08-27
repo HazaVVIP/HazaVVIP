@@ -1,9 +1,9 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/lab-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/lab-light.svg">
-  <img alt="HazaVVIP Systems Intelligence Lab" src="./assets/generated/lab-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/generated/signal-array-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/generated/signal-array-light.svg">
+  <img alt="HazaVVIP Signal Array — Systems Intelligence Lab" src="./assets/generated/signal-array-light.svg">
 </picture>
 
 </div>
@@ -20,11 +20,11 @@
   I build tools for discovery, systems research, automation, and learning in public.
 </p>
 
-## System brief
+## Signal briefing
 
-This profile is a living map of experiments, utilities, and open-source artifacts. The visual language is inspired by an intelligence console: repositories become signals, projects become operational domains, and contribution history becomes telemetry.
+This profile is a living map of experiments, utilities, and open-source artifacts. The visual language is built as a **signal array**: repositories become artifacts, engineering domains become orbital channels, and contribution history becomes a transmission waveform.
 
-The dashboard above is generated from `profile.config.json` and `data/profile.json` by `scripts/render_lab.py`. It has a static information layer so the profile remains useful even when GitHub does not play optional SVG motion.
+The hero above is generated from `profile.config.json` and `data/profile.json` by `scripts/render_signal_array.py`. It is intentionally asymmetric and layered rather than a grid of equal dashboard cards. The static information layer remains complete even when GitHub does not play optional SVG motion.
 
 ## Signal channels
 
@@ -89,7 +89,10 @@ The dashboard above is generated from `profile.config.json` and `data/profile.js
 The generated assets live in `assets/generated/`, while `assets/fallback/` keeps a static copy for compatibility testing. To rebuild locally:
 
 ```bash
+python3 scripts/fetch_profile_data.py
+python3 scripts/render_signal_array.py
 python3 scripts/render_lab.py
+python3 scripts/validate_assets.py
 ```
 
 </details>

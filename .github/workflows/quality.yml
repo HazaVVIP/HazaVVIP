@@ -36,7 +36,9 @@ jobs:
           python-version: "3.11"
 
       - name: Render generated assets
-        run: python3 scripts/render_lab.py
+        run: |
+          python3 scripts/render_lab.py
+          python3 scripts/render_signal_array.py
 
       - name: Validate assets and README
         run: python3 scripts/validate_assets.py
