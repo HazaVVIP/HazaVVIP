@@ -31,6 +31,7 @@ jobs:
 
       - name: Render profile assets
         run: |
+          python3 scripts/render_portrait_terminal.py
           python3 scripts/render_repository_genome.py
           python3 scripts/render_lab.py
           python3 scripts/render_signal_array.py
@@ -42,5 +43,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/profile.json assets/genome/*.svg assets/generated/*.svg assets/fallback/*.svg
+          git add data/profile.json assets/portrait/*.svg assets/genome/*.svg assets/generated/*.svg assets/fallback/*.svg
           git diff --cached --quiet || (git commit -m "chore: refresh profile telemetry [skip ci]" && git push)

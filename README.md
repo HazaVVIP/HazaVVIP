@@ -1,18 +1,16 @@
 <div align="center">
 
-<a href="https://github.com/HazaVVIP/GitRecon">
+<a href="https://github.com/HazaVVIP">
 <picture>
-  <source media="(min-width: 769px) and (prefers-color-scheme: dark)" srcset="./assets/genome/repository-genome-dark.svg">
-  <source media="(min-width: 769px) and (prefers-color-scheme: light)" srcset="./assets/genome/repository-genome-light.svg">
-  <source media="(max-width: 768px) and (prefers-color-scheme: dark)" srcset="./assets/genome/repository-genome-mobile-dark.svg">
-  <source media="(max-width: 768px) and (prefers-color-scheme: light)" srcset="./assets/genome/repository-genome-mobile-light.svg">
-  <img width="100%" src="./assets/genome/repository-genome-light.svg" alt="HazaVVIP Repository Genome featuring GitRecon as the featured artifact">
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/portrait/portrait-terminal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/portrait/portrait-terminal-light.svg">
+  <img width="100%" src="./assets/portrait/portrait-terminal-light.svg" alt="HazaVVIP animated halftone portrait in a terminal-style profile scene">
 </picture>
 </a>
 
 </div>
 
-<h1 align="center"><code>HazaVVIP / REPOSITORY GENOME</code></h1>
+<h1 align="center"><code>HazaVVIP / PORTRAIT SIGNAL</code></h1>
 
 <p align="center">
   <strong>I build instruments for finding what hides in systems.</strong><br>
@@ -27,11 +25,11 @@
 
 ## The entry point
 
-Every system has a surface. **[GitRecon](https://github.com/HazaVVIP/GitRecon)** is the first instrument in this profile: a Rust-based public engineering artifact for discovering, mapping, and observing systems. The genome above treats it as an entry point rather than a card. The surrounding strands show the instruments that extend the same line of inquiry.
+Every system has a surface. **[GitRecon](https://github.com/HazaVVIP/GitRecon)** is the first instrument in this profile: a Rust-based public engineering artifact for discovering, mapping, and observing systems. The portrait scene above acts as an entry point rather than a card. The surrounding strands show the instruments that extend the same line of inquiry.
 
 > **One artifact → many instruments → one living system.**
 
-The visual is generated from repository metadata and a curated relationship model. Stars, language, state, and update time influence signal weight, while the human-authored role and mission preserve meaning that raw GitHub metadata cannot provide.
+The portrait scene is a native animated SVG generated from a private source portrait transformed into a compact point cloud. Scanlines, halftone density, glitch fragments, and telemetry rows are rendered as an identity signal; no personal source photo is stored in the public repository.
 
 ## Follow the signal
 
@@ -116,12 +114,14 @@ This profile is rendered from public GitHub data plus a small, human-authored re
 
 ```bash
 python3 scripts/fetch_profile_data.py
+python3 scripts/extract_portrait_points.py
+python3 scripts/render_portrait_terminal.py
 python3 scripts/render_repository_genome.py
 python3 scripts/render_signal_array.py
 python3 scripts/render_lab.py
 python3 scripts/validate_assets.py
 ```
 
-The generated Genome assets live in `assets/genome/`; `assets/fallback/` keeps compatibility copies for the earlier profile engine. The workflow refreshes public telemetry with the built-in Actions token and never stores a personal credential.
+The portrait terminal assets live in `assets/portrait/`; the source photo remains local-only and is transformed into `data/portrait_points.json` before rendering. `assets/fallback/` keeps compatibility copies for the earlier profile engine. The workflow refreshes public telemetry with the built-in Actions token and never stores a personal credential.
 
 </details>

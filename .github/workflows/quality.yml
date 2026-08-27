@@ -37,6 +37,7 @@ jobs:
 
       - name: Render generated assets
         run: |
+          python3 scripts/render_portrait_terminal.py
           python3 scripts/render_repository_genome.py
           python3 scripts/render_lab.py
           python3 scripts/render_signal_array.py
