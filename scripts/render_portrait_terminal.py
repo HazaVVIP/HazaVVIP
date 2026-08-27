@@ -17,14 +17,14 @@ PORTRAIT_X, PORTRAIT_Y, PORTRAIT_W, PORTRAIT_H = 44, 134, 440, 636
 
 PALETTES = {
     "dark": {
-        "bg": "#050816", "window": "#0A1023", "panel": "#070C19", "ink": "#F2F8FF",
-        "muted": "#7891A8", "line": "#284766", "cyan": "#47E6F2", "violet": "#9C6CFF",
-        "magenta": "#F27DE2", "green": "#56E7AF", "amber": "#FFC76A"
+        "bg": "#03050D", "window": "#07101F", "panel": "#040912", "ink": "#F6F8FF",
+        "muted": "#6D86A7", "line": "#153457", "cyan": "#258BFF", "violet": "#605DFF",
+        "magenta": "#FF3158", "green": "#2DE2E6", "amber": "#FFB74A"
     },
     "light": {
-        "bg": "#F4FAFC", "window": "#F9FEFF", "panel": "#F1F8FA", "ink": "#172A3A",
-        "muted": "#5B788A", "line": "#9CC5D0", "cyan": "#008EA4", "violet": "#7045D2",
-        "magenta": "#BE3DAA", "green": "#00896E", "amber": "#A45F00"
+        "bg": "#F4F7FC", "window": "#FBFDFF", "panel": "#EFF4FA", "ink": "#0D1A2B",
+        "muted": "#54708D", "line": "#A5B9D2", "cyan": "#005CFF", "violet": "#4D37DA",
+        "magenta": "#D51F4A", "green": "#007E8A", "amber": "#AA5A00"
     },
 }
 COLOR_MAP = {"violet": "violet", "cyan": "cyan", "rose": "magenta"}

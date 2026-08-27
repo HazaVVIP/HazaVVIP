@@ -9,8 +9,8 @@ OUT = ROOT / "assets" / "portrait"
 OUT.mkdir(parents=True, exist_ok=True)
 
 PALETTES = {
-    "dark": {"bg": "#050816", "panel": "#0A1023", "line": "#284766", "cyan": "#47E6F2", "violet": "#9C6CFF", "magenta": "#F27DE2", "green": "#56E7AF"},
-    "light": {"bg": "#F4FAFC", "panel": "#F9FEFF", "line": "#9CC5D0", "cyan": "#008EA4", "violet": "#7045D2", "magenta": "#BE3DAA", "green": "#00896E"},
+    "dark": {"bg": "#03050D", "panel": "#07101F", "line": "#153457", "cyan": "#258BFF", "violet": "#605DFF", "magenta": "#FF3158", "green": "#2DE2E6"},
+    "light": {"bg": "#F4F7FC", "panel": "#FBFDFF", "line": "#A5B9D2", "cyan": "#005CFF", "violet": "#4D37DA", "magenta": "#D51F4A", "green": "#007E8A"},
 }
 
 
