@@ -17,8 +17,12 @@ REQUIRED = [
     ROOT / "data" / "portrait_points.json",
     ROOT / "assets" / "portrait" / "portrait-terminal-dark.svg",
     ROOT / "assets" / "portrait" / "portrait-terminal-light.svg",
+    ROOT / "assets" / "portrait" / "signal-icons-dark.svg",
+    ROOT / "assets" / "portrait" / "signal-icons-light.svg",
     ROOT / "assets" / "fallback" / "portrait-terminal-dark.svg",
     ROOT / "assets" / "fallback" / "portrait-terminal-light.svg",
+    ROOT / "assets" / "fallback" / "signal-icons-dark.svg",
+    ROOT / "assets" / "fallback" / "signal-icons-light.svg",
     ROOT / "assets" / "genome" / "repository-genome-dark.svg",
     ROOT / "assets" / "genome" / "repository-genome-light.svg",
     ROOT / "assets" / "genome" / "repository-genome-mobile-dark.svg",
@@ -44,10 +48,8 @@ SECRET_PATTERNS = [
 ]
 
 
-def same(folder: str, name: str) -> bool:
-    generated = ROOT / folder / name
-    fallback = ROOT / "assets" / "fallback" / name
-    return generated.read_bytes() == fallback.read_bytes()
+def same(left: Path, right: Path) -> bool:
+    return left.read_bytes() == right.read_bytes()
 
 
 def main() -> int:
@@ -56,13 +58,12 @@ def main() -> int:
         if not path.exists():
             errors.append(f"missing: {path.relative_to(ROOT)}")
 
-    json_files = (
+    for json_path in (
         ROOT / "profile.config.json",
         ROOT / "data" / "profile.json",
         ROOT / "data" / "repository_genome.json",
         ROOT / "data" / "portrait_points.json",
-    )
-    for json_path in json_files:
+    ):
         if json_path.exists():
             try:
                 json.loads(json_path.read_text(encoding="utf-8"))
@@ -74,7 +75,7 @@ def main() -> int:
         points = json.loads(points_path.read_text(encoding="utf-8"))
         if len(points.get("points", [])) < 1000:
             errors.append("portrait point cloud must contain at least 1000 points")
-        if not points.get("stats", {}).get("total"):
+        if points.get("stats", {}).get("total", 0) < 1000:
             errors.append("portrait point cloud is missing stats.total")
 
     genome_path = ROOT / "data" / "repository_genome.json"
@@ -93,7 +94,7 @@ def main() -> int:
             ET.parse(path)
         except ET.ParseError as exc:
             errors.append(f"invalid XML: {path.relative_to(ROOT)} ({exc})")
-        if path.stat().st_size > 250_000:
+        if path.stat().st_size > 2_500_000:
             errors.append(f"too large: {path.relative_to(ROOT)}")
         text = path.read_text(encoding="utf-8")
         if "<script" in text.lower():
@@ -104,23 +105,32 @@ def main() -> int:
 
     for path in sorted((ROOT / "assets" / "portrait").glob("portrait-terminal-*.svg")):
         text = path.read_text(encoding="utf-8")
-        if text.count("<animate") < 100:
-            errors.append(f"portrait animation too sparse: {path.relative_to(ROOT)}")
-        if "HALFTONE / SCANLINE / GLITCH / IDENTITY SIGNAL" not in text:
+        if text.count("<animateTransform") < 1000:
+            errors.append(f"portrait is not per-pixel animated: {path.relative_to(ROOT)}")
+        if "per-pixel animated portrait" not in text:
             errors.append(f"portrait marker missing: {path.relative_to(ROOT)}")
+
+    for path in sorted((ROOT / "assets" / "portrait").glob("signal-icons-*.svg")):
+        text = path.read_text(encoding="utf-8")
+        if "<text" in text:
+            errors.append(f"signal icon rail contains text: {path.relative_to(ROOT)}")
+        if text.count("<animate") < 8:
+            errors.append(f"signal icon rail is not animated: {path.relative_to(ROOT)}")
 
     readme = (ROOT / "README.md").read_text(encoding="utf-8")
     for required_text in (
-        "PORTRAIT SIGNAL",
         "portrait-terminal-dark.svg",
         "portrait-terminal-light.svg",
-        "GitRecon",
-        "RECON",
-        "PACKET",
-        "AUTOMATION",
+        "signal-icons-dark.svg",
+        "signal-icons-light.svg",
+        "snake-light.svg",
+        "skillicons.dev",
     ):
         if required_text not in readme:
-            errors.append(f"README missing marker: {required_text}")
+            errors.append(f"README missing visual asset: {required_text}")
+    for forbidden in ("## ", "<h1", "<h2", "<table", "```", "| --- |"):
+        if forbidden in readme:
+            errors.append(f"README must remain visual-only; found: {forbidden}")
     for pattern in SECRET_PATTERNS:
         if pattern.search(readme):
             errors.append("secret pattern found: README.md")
@@ -128,32 +138,26 @@ def main() -> int:
     ignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
     if "assets/portrait/source-stylized.png" not in ignore:
         errors.append("source portrait must remain ignored")
+    if "reference-arifhaxn/" not in ignore:
+        errors.append("reference analysis must remain ignored")
 
-    for name in (
-        "portrait-terminal-dark.svg",
-        "portrait-terminal-light.svg",
-    ):
-        if (ROOT / "assets" / "portrait" / name).exists() and (ROOT / "assets" / "fallback" / name).exists() and not same("assets/portrait", name):
-            errors.append(f"{name} fallback differs from portrait asset")
-
-    for name in (
-        "repository-genome-dark.svg",
-        "repository-genome-light.svg",
-        "repository-genome-mobile-dark.svg",
-        "repository-genome-mobile-light.svg",
-    ):
-        if (ROOT / "assets" / "genome" / name).exists() and (ROOT / "assets" / "fallback" / name).exists() and not same("assets/genome", name):
-            errors.append(f"{name} fallback differs from generated genome asset")
-
-    for theme in ("dark", "light"):
-        generated = (ROOT / "assets" / "generated" / f"signal-array-{theme}.svg").read_bytes()
-        fallback = (ROOT / "assets" / "fallback" / f"signal-array-{theme}.svg").read_bytes()
-        if generated != fallback:
-            errors.append(f"{theme} signal-array fallback differs from generated asset")
-        generated = (ROOT / "assets" / "generated" / f"lab-{theme}.svg").read_bytes()
-        fallback = (ROOT / "assets" / "fallback" / f"lab-{theme}.svg").read_bytes()
-        if generated != fallback:
-            errors.append(f"{theme} lab fallback differs from generated asset")
+    fallback_pairs = [
+        (ROOT / "assets" / "portrait" / "portrait-terminal-dark.svg", ROOT / "assets" / "fallback" / "portrait-terminal-dark.svg"),
+        (ROOT / "assets" / "portrait" / "portrait-terminal-light.svg", ROOT / "assets" / "fallback" / "portrait-terminal-light.svg"),
+        (ROOT / "assets" / "portrait" / "signal-icons-dark.svg", ROOT / "assets" / "fallback" / "signal-icons-dark.svg"),
+        (ROOT / "assets" / "portrait" / "signal-icons-light.svg", ROOT / "assets" / "fallback" / "signal-icons-light.svg"),
+        (ROOT / "assets" / "genome" / "repository-genome-dark.svg", ROOT / "assets" / "fallback" / "repository-genome-dark.svg"),
+        (ROOT / "assets" / "genome" / "repository-genome-light.svg", ROOT / "assets" / "fallback" / "repository-genome-light.svg"),
+        (ROOT / "assets" / "genome" / "repository-genome-mobile-dark.svg", ROOT / "assets" / "fallback" / "repository-genome-mobile-dark.svg"),
+        (ROOT / "assets" / "genome" / "repository-genome-mobile-light.svg", ROOT / "assets" / "fallback" / "repository-genome-mobile-light.svg"),
+        (ROOT / "assets" / "generated" / "lab-dark.svg", ROOT / "assets" / "fallback" / "lab-dark.svg"),
+        (ROOT / "assets" / "generated" / "lab-light.svg", ROOT / "assets" / "fallback" / "lab-light.svg"),
+        (ROOT / "assets" / "generated" / "signal-array-dark.svg", ROOT / "assets" / "fallback" / "signal-array-dark.svg"),
+        (ROOT / "assets" / "generated" / "signal-array-light.svg", ROOT / "assets" / "fallback" / "signal-array-light.svg"),
+    ]
+    for left, right in fallback_pairs:
+        if left.exists() and right.exists() and not same(left, right):
+            errors.append(f"fallback differs from generated asset: {left.relative_to(ROOT)}")
 
     if errors:
         print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
