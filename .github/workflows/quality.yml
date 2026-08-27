@@ -1,0 +1,42 @@
+name: Validate profile engine
+
+on:
+  push:
+    branches: [main, systems-lab-v1]
+    paths:
+      - "README.md"
+      - "profile.config.json"
+      - "data/**"
+      - "scripts/**"
+      - "assets/**"
+      - ".github/workflows/**"
+  pull_request:
+    paths:
+      - "README.md"
+      - "profile.config.json"
+      - "data/**"
+      - "scripts/**"
+      - "assets/**"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Render generated assets
+        run: python3 scripts/render_lab.py
+
+      - name: Validate assets and README
+        run: python3 scripts/validate_assets.py

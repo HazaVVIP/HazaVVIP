@@ -1,0 +1,137 @@
+{
+  "username": "HazaVVIP",
+  "name": "Aditya",
+  "followers": 2,
+  "following": 0,
+  "public_repos": 14,
+  "public_gists": 0,
+  "updated_at": "2026-08-27T01:00:37Z",
+  "repositories": [
+    {
+      "name": "HazaVVIP",
+      "description": "Animated GitHub profile README",
+      "language": "Other",
+      "stars": 0,
+      "forks": 0,
+      "domain": "EXPERIMENTS",
+      "updated_at": "2026-08-27T01:07:20Z"
+    },
+    {
+      "name": "GitRecon",
+      "description": "public engineering artifact",
+      "language": "Rust",
+      "stars": 2,
+      "forks": 0,
+      "domain": "RECON",
+      "updated_at": "2026-08-26T22:38:53Z"
+    },
+    {
+      "name": "haquests",
+      "description": "Low-Level Packet Crafting",
+      "language": "PHP",
+      "stars": 0,
+      "forks": 0,
+      "domain": "PACKET",
+      "updated_at": "2026-08-23T07:10:43Z"
+    },
+    {
+      "name": "manus",
+      "description": "Manus AI",
+      "language": "Other",
+      "stars": 0,
+      "forks": 0,
+      "domain": "AUTOMATION",
+      "updated_at": "2026-08-22T15:51:34Z"
+    },
+    {
+      "name": "MCP-Server",
+      "description": "White Hat (Bug Bounty) ",
+      "language": "Other",
+      "stars": 0,
+      "forks": 0,
+      "domain": "AUTOMATION",
+      "updated_at": "2026-08-20T21:09:10Z"
+    },
+    {
+      "name": "byps",
+      "description": "Bypass 401 / 403",
+      "language": "C++",
+      "stars": 0,
+      "forks": 0,
+      "domain": "PACKET",
+      "updated_at": "2026-08-11T08:34:27Z"
+    },
+    {
+      "name": "Fable5",
+      "description": "public engineering artifact",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "domain": "EXPERIMENTS",
+      "updated_at": "2026-07-29T16:54:24Z"
+    },
+    {
+      "name": "dirclone",
+      "description": "tools khusus untuk clone direktori listings",
+      "language": "Rust",
+      "stars": 0,
+      "forks": 0,
+      "domain": "EXPERIMENTS",
+      "updated_at": "2026-07-19T23:26:40Z"
+    },
+    {
+      "name": "telemetry",
+      "description": "my web app",
+      "language": "HTML",
+      "stars": 0,
+      "forks": 0,
+      "domain": "AUTOMATION",
+      "updated_at": "2026-07-02T17:23:44Z"
+    },
+    {
+      "name": "githunt",
+      "description": "public engineering artifact",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "domain": "RECON",
+      "updated_at": "2026-07-01T08:30:58Z"
+    },
+    {
+      "name": "chat_video_geoip",
+      "description": "public engineering artifact",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "domain": "EXPERIMENTS",
+      "updated_at": "2026-06-13T06:59:48Z"
+    },
+    {
+      "name": "gpl",
+      "description": "public engineering artifact",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "domain": "EXPERIMENTS",
+      "updated_at": "2026-05-12T17:45:58Z"
+    },
+    {
+      "name": "CVE-2025-30208",
+      "description": "public engineering artifact",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "domain": "PACKET",
+      "updated_at": "2026-05-10T04:34:53Z"
+    },
+    {
+      "name": "hazler",
+      "description": "HAZLER - Next-Generation Intelligent Web Crawler",
+      "language": "Rust",
+      "stars": 1,
+      "forks": 0,
+      "domain": "RECON",
+      "updated_at": "2026-04-04T08:34:30Z"
+    }
+  ]
+}
