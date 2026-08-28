@@ -99,18 +99,18 @@
   <text x="1002" y="651" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Python</text>
   <rect x="1054" y="644" width="52" height="6" rx="3" fill="#1B4662"/>
   <rect x="1054" y="644" width="52" height="6" rx="3" fill="#22D3EE"/>
-  <text x="1002" y="661" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Other</text>
+  <text x="1002" y="661" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Rust</text>
   <rect x="1054" y="654" width="52" height="6" rx="3" fill="#1B4662"/>
-  <rect x="1054" y="654" width="31" height="6" rx="3" fill="#A78BFA"/>
-  <text x="1002" y="671" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Rust</text>
+  <rect x="1054" y="654" width="26" height="6" rx="3" fill="#A78BFA"/>
+  <text x="1002" y="671" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">Other</text>
   <rect x="1054" y="664" width="52" height="6" rx="3" fill="#1B4662"/>
-  <rect x="1054" y="664" width="31" height="6" rx="3" fill="#34D399"/>
+  <rect x="1054" y="664" width="17" height="6" rx="3" fill="#34D399"/>
   <text x="1002" y="681" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">C++</text>
   <rect x="1054" y="674" width="52" height="6" rx="3" fill="#1B4662"/>
-  <rect x="1054" y="674" width="10" height="6" rx="3" fill="#FBBF24"/>
+  <rect x="1054" y="674" width="8" height="6" rx="3" fill="#FBBF24"/>
   <text x="1002" y="691" text-anchor="start" font-family="monospace" font-size="8px" font-weight="400" fill="#8BA7B8">HTML</text>
   <rect x="1054" y="684" width="52" height="6" rx="3" fill="#1B4662"/>
-  <rect x="1054" y="684" width="10" height="6" rx="3" fill="#FB7185"/>
+  <rect x="1054" y="684" width="8" height="6" rx="3" fill="#FB7185"/>
   <text x="58" y="725" text-anchor="start" font-family="monospace" font-size="12px" font-weight="400" fill="#8BA7B8">$ observe --public-signal --continuous</text>
   <text x="1120" y="725" text-anchor="end" font-family="monospace" font-size="12px" font-weight="700" fill="#22D3EE">RECON · PACKET · AUTOMATION</text>
 </svg>
