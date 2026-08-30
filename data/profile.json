@@ -8,22 +8,22 @@
   "updated_at": "2026-08-27T01:00:37Z",
   "repositories": [
     {
-      "name": "HazaVVIP",
-      "description": "Animated GitHub profile README",
-      "language": "Python",
-      "stars": 0,
-      "forks": 0,
-      "domain": "EXPERIMENTS",
-      "updated_at": "2026-08-28T18:48:32Z"
-    },
-    {
       "name": "GitRecon",
       "description": "public engineering artifact",
       "language": "Rust",
       "stars": 2,
       "forks": 0,
       "domain": "RECON",
-      "updated_at": "2026-08-27T08:23:52Z"
+      "updated_at": "2026-08-30T11:39:38Z"
+    },
+    {
+      "name": "HazaVVIP",
+      "description": "Animated GitHub profile README",
+      "language": "Python",
+      "stars": 0,
+      "forks": 0,
+      "domain": "EXPERIMENTS",
+      "updated_at": "2026-08-29T12:47:15Z"
     },
     {
       "name": "haquests",
