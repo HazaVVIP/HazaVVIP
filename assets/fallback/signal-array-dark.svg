@@ -163,7 +163,7 @@
   </g>
   <path d="M 92 606 H 1088" stroke="#1B4662" stroke-width="1"/>
   <text x="92" y="596" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#34D399" opacity="1.0">ACTIVITY / SIGNAL DENSITY</text>
-  <text x="1088" y="596" text-anchor="end" font-family="monospace" font-size="9px" font-weight="600" fill="#8BA7B8" opacity="1.0">SNAPSHOT 2026-08-27</text>
+  <text x="1088" y="596" text-anchor="end" font-family="monospace" font-size="9px" font-weight="600" fill="#8BA7B8" opacity="1.0">SNAPSHOT 2026-09-16</text>
   <path d="M 92 640 C 140 612 160 666 205 640 S 274 616 315 642 S 384 676 427 633 S 500 604 544 640 S 613 675 659 634 S 736 608 780 640 S 852 670 896 630 S 970 610 1018 641 S 1060 657 1088 632" fill="none" stroke="url(#signal)" stroke-width="3" stroke-linecap="round" filter="url(#smallGlow)"/>
   <path d="M 92 640 C 140 612 160 666 205 640 S 274 616 315 642 S 384 676 427 633 S 500 604 544 640 S 613 675 659 634 S 736 608 780 640 S 852 670 896 630 S 970 610 1018 641 S 1060 657 1088 632" fill="none" stroke="#F8FAFC" stroke-opacity=".22" stroke-width="1"/>
   <text x="92" y="675" text-anchor="start" font-family="monospace" font-size="10px" font-weight="700" fill="#8BA7B8" opacity="1.0">REPOSITORIES 13</text>
